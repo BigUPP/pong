@@ -71,9 +71,11 @@ class Ball(pygame.sprite.Sprite):
 
     def reset(self):
         if self.coordinate.left < 15:
-            self.coordinate = pygame.Rect(200, 200, 10, 10)
+            self.coordinate = pygame.Rect(400, 300, 10, 10)
+            self.xmovement = -(self.xmovement)
         if self.coordinate.right > 785:
-            self.coordinate = pygame.Rect(200, 200, 10, 10)
+            self.coordinate = pygame.Rect(400, 300, 10, 10)
+            self.xmovement = -(self.xmovement)
 
     def hitbox(self):
         #check for collition and change velocity
