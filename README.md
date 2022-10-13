@@ -1,2 +1,2 @@
 # pong
-this is still not finished!!
+this is now finshed
